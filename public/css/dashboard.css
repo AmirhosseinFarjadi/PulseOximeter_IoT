@@ -1,0 +1,44 @@
+body{
+    font-family:"iranSnas";
+}
+.dataHistory td, .dataHistory th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+
+  .bgGreen{
+    background-color: #4CAF50;
+    color: white;
+    width: auto;
+    font-size: 20px;
+    font-family: "iranSans";
+
+
+  }
+  .bgGray{
+    background-color: #ddd;
+    color: black;
+    width: auto;
+    font-size: 18px;
+    font-family: "iranSans";
+    font-weight: 500;
+  }
+
+.title{
+    text-align: center;
+    direction:rtl ;
+    font-family: "iranSans";
+}
+table{
+    margin-left: 23%;
+    margin-right: 23%;
+}
+#spo2{
+    font-size: 40px;
+    padding-left: 10px;
+}
+#bpm{
+    font-size: 40px;
+    padding-left: 10px;
+}

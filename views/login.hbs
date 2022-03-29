@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="/css/login.css" type="text/css"/>
+  <script type="text/javascript" src="/js/login.js"></script>
+
+  <title>login</title>
+</head>
+<body>
+  <div class="cotn_principal">
+    <div class="cont_centrar">
+    
+      <div class="cont_login">
+    <div class="cont_info_log_sign_up">
+          <div class="col_md_login">
+    <div class="cont_ba_opcitiy">
+
+      {{#if error }}
+        <p class="alert alert-danget">{{> error }}</p>   
+      {{/if}}
+
+            <h2>LOGIN</h2>  
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+      <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+      </div>
+      </div>
+    <div class="col_md_sign_up">
+    <div class="cont_ba_opcitiy">
+      <h2>SIGN UP</h2>
+    
+      
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    
+      <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+    </div>
+      </div>
+           </div>
+    
+        
+        <div class="cont_back_info">
+           <div class="cont_img_back_grey">
+           </div>
+           
+        </div>
+    <div class="cont_forms" >
+        <div class="cont_img_back_">
+           </div>
+    <form action="/login" method="POST">
+     <div class="cont_form_login">
+    <a href="#" onclick="ocultar_login_sign_up()" ><i class="material-icons">&#xE5C4;</i></a>
+       <h2>LOGIN</h2>
+     <input type="text" name="user" placeholder="User" />
+    <input type="password" name="pass" placeholder="Password" />
+    <button type="submit" class="btn_login" onclick="cambiar_login()">LOGIN</button>
+    </form>
+
+      </div>
+        <form action="/register" method="POST">
+       <div class="cont_form_sign_up">
+    <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+         <h2>SIGN UP</h2>
+    <input type="text" name="email" placeholder="Email" />
+    <input type="text" name="user" placeholder="User" />
+    <input type="password" name="pass"  placeholder="Password" />
+    <button type="submit" class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+      </div>
+        </form>
+
+        </div>
+        
+      </div>
+     </div>
+    </div>
+</body>
+</html>
